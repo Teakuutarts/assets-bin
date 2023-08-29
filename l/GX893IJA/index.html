@@ -1,0 +1,48 @@
+[17:39:33 WARN] [org.mariadb.jdbc.message.server.ErrorPacket]: Error: 1060-42S21: Duplicate column name 'clan_color'
+[17:39:33 INFO]: Enabled plugin Clans version 0.9.9.38 by Simonsator
+[17:39:33 ERROR]: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+[17:39:33 ERROR]: 
+[17:39:33 ERROR]: The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+[17:39:33 ERROR]:       at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+[17:39:33 ERROR]:       at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+[17:39:33 ERROR]:       at de.simonsator.partyandfriends.communication.sql.SQLCommunication.createConnection(SQLCommunication.java:91)
+[17:39:33 ERROR]:       at de.simonsator.partyandfriends.communication.sql.SQLCommunication.<init>(SQLCommunication.java:34)
+[17:39:33 ERROR]:       at de.simonsator.partyandfriends.clan.stats.buildbattle.SPConnection.<init>(SPConnection.java:16)
+[17:39:33 ERROR]:       at de.simonsator.partyandfriends.clan.stats.buildbattle.SPStatMain.onEnable(SPStatMain.java:23)
+[17:39:33 ERROR]:       at net.md_5.bungee.api.plugin.PluginManager.enablePlugins(PluginManager.java:316)
+[17:39:33 ERROR]:       at net.md_5.bungee.BungeeCord.start(BungeeCord.java:299)
+[17:39:33 ERROR]:       at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:67)
+[17:39:33 ERROR]:       at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15)
+[17:39:33 ERROR]: Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+[17:39:33 ERROR]: 
+[17:39:33 ERROR]: The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[17:39:33 ERROR]:       at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[17:39:33 ERROR]:       at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+[17:39:33 ERROR]:       at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[17:39:33 ERROR]:       at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+[17:39:33 ERROR]:       at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+[17:39:33 ERROR]:       at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+[17:39:33 ERROR]:       at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+[17:39:33 ERROR]:       at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+[17:39:33 ERROR]:       at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+[17:39:33 ERROR]:       at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+[17:39:33 ERROR]:       at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+[17:39:33 ERROR]:       at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+[17:39:33 ERROR]:       ... 13 more
+[17:39:33 ERROR]: Caused by: java.net.ConnectException: Connection refused
+[17:39:33 ERROR]:       at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+[17:39:33 ERROR]:       at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+[17:39:33 ERROR]:       at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+[17:39:33 ERROR]:       at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+[17:39:33 ERROR]:       at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[17:39:33 ERROR]:       at java.base/java.net.Socket.connect(Socket.java:633)
+[17:39:33 ERROR]:       at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+[17:39:33 ERROR]:       at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+[17:39:33 ERROR]:       ... 16 more
